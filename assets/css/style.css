@@ -284,7 +284,7 @@ h6 {
     transform: translate3d( -10px, -10px, 0);
 }
 
-.about_text {
+.about__text {
     width: 100%;
     color: #fff;
     text-transform: uppercase;
@@ -292,8 +292,43 @@ h6 {
     font-size: 18px;
     text-align: center;
     position: absolute;
+    opacity: 0;
     top: 50%;
     left: 0;
     z-index: 2;
     transform: translate3d(0, -50%, 0);
+    transition: opacity .1s linear;
+}
+
+.statistics {
+    background-color: #95e1d3;
+    margin-top: 40px;
+}
+
+.stat {
+    display: flex;
+}
+
+.stat_item {
+    flex: 1 1 0;
+    border-left: 1px solid #b5eae0;
+    color: #fff;
+    padding: 70px 25px;
+    text-align: center;
+}
+
+.stat_item:last-child {
+    border-right: 1px solid #b5eae0;
+}
+
+.stats-count {
+    margin-bottom: 10px;
+    font-size: 72px;
+    font-weight: 700;
+    line-height: 1;
+}
+
+.stats_text {
+    font-size: 14px;
+    text-transform: uppercase;
 }
